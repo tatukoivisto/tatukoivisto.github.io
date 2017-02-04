@@ -166,12 +166,26 @@ body {
 .icon-container {
 	display: block;
     position: absolute;
-	top: 50%;
+	top: 55%;
     z-index: 1;
     max-height: 100%;
     width: 9%;
-    transform: translate(-50%,0);
+    transform: translate(-50%,-50%);
+    
+    -webkit-transition: 0.2s;
+	   -moz-transition: 0.2s;
+	    -ms-transition: 0.2s;
+	     -o-transition: 0.2s;
+	        transition: 0.2s;
+}
 
+.icon-container:hover {
+	width: 11%;
+	-webkit-transition: 0.2s;
+	   -moz-transition: 0.2s;
+	    -ms-transition: 0.2s;
+	     -o-transition: 0.2s;
+	        transition: 0.2s;
 }
 
 #first-icon, #first-icon-text-holder{
@@ -188,7 +202,7 @@ body {
 
 .icon-text-holder {
 	position: absolute;
-    top: 65%;
+    top: 62%;
     left: 20%;
     transform: translate(-50%,0);
     font-size: 2vw;;
@@ -203,17 +217,17 @@ body {
 
 @media screen and (max-width: 900px) {
 	.icon-text-holder {
-		top: 62%;		
+	
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.icon-text-holder {
-		top: 59%;		
+		top: 60%;
 	}
 }
 @media screen and (max-width: 550px) {
 	.icon-text-holder {
-		top: 56%;		
+	top: 58%;
 	}
 }
