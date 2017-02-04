@@ -47,6 +47,7 @@ body {
 	width: 50%;
 	max-width: 50%;
 	z-index: 2;
+	float: left;
 	background: url('../img/left.jpg') repeat 0 0;
 	background-size: cover;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
@@ -72,7 +73,6 @@ body {
  
 }
 
-/* RIGHT */
  
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
@@ -99,7 +99,6 @@ body {
 	to {background-position: 100vw 0;}
 }
 
-/* LEFT */
 
 @-webkit-keyframes animate-right {
 	from {background-position:100vw 0;}
@@ -148,7 +147,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    width: 15%;
+    width: 30%;
     
 }
 
