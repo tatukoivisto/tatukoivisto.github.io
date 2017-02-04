@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+
+
+
+
 $("#logo-style").click(hideCover);
 
 
