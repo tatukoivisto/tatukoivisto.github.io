@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159" height="153" viewBox="0 0 159 153">
+  <defs>
+    <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(0 -3)">
+    <polygon points=".5 0 158.5 0 158.5 158 .5 158" transform="matrix(1 0 0 -1 0 158)"/>
+    <path fill="#FFFFFF" d="M23.8708333,122.384167 L33.1533333,131.666667 L44.9375,119.816667 L35.655,110.534167 L23.8708333,122.384167 L23.8708333,122.384167 Z M72.9166667,148.125 L86.0833333,148.125 L86.0833333,128.704167 L72.9166667,128.704167 L72.9166667,148.125 L72.9166667,148.125 Z M26.8333333,69.4541667 L7.08333333,69.4541667 L7.08333333,82.6208333 L26.8333333,82.6208333 L26.8333333,69.4541667 L26.8333333,69.4541667 Z M99.25,41.87 L99.25,10.2041667 L59.75,10.2041667 L59.75,41.87 C47.9658333,48.7166667 40,61.4225 40,76.0375 C40,97.8283333 57.7091667,115.5375 79.5,115.5375 C101.290833,115.5375 119,97.8283333 119,76.0375 C119,61.4225 111.034167,48.7166667 99.25,41.87 L99.25,41.87 Z M132.166667,69.4541667 L132.166667,82.6208333 L151.916667,82.6208333 L151.916667,69.4541667 L132.166667,69.4541667 L132.166667,69.4541667 Z M113.996667,119.8825 L125.780833,131.7325 L135.063333,122.45 L123.213333,110.665833 L113.996667,119.8825 L113.996667,119.8825 Z" transform="matrix(1 0 0 -1 0 158.33)"/>
+  </g>
+</svg>

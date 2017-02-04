@@ -5,7 +5,7 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	margin: 0;
-	height: 100%;
+	height: 100%
 }
 
 #main-navigation {
@@ -151,8 +151,6 @@ body {
     
 }
 
-
-
 #logo-style {
 	width: 100%;
 	position: relative;
@@ -160,9 +158,62 @@ body {
 
 
 
-@media screen and (max-width: 500px) {
-	#logo-container {
-		top: 45%;
-		width: 20%;
+.icon-style {
+	width: 100%;
+	position: relative;
+}
+
+.icon-container {
+	display: block;
+    position: absolute;
+	top: 50%;
+    z-index: 1;
+    max-height: 100%;
+    width: 9%;
+    transform: translate(-50%,0);
+
+}
+
+#first-icon, #first-icon-text-holder{
+	left: 20%;
+}
+
+#second-icon, #second-icon-text-holder{
+	left: 50%;
+}
+
+#third-icon, #third-icon-text-holder{
+	left: 80%;
+}
+
+.icon-text-holder {
+	position: absolute;
+    top: 65%;
+    left: 20%;
+    transform: translate(-50%,0);
+    font-size: 2vw;;
+    color: #FFF;
+}
+
+.content-div-1, .content-div-2, .content-div-3 {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	.icon-text-holder {
+		top: 62%;		
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.icon-text-holder {
+		top: 59%;		
+	}
+}
+@media screen and (max-width: 550px) {
+	.icon-text-holder {
+		top: 56%;		
 	}
 }
