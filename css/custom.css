@@ -57,14 +57,20 @@ body {
 	animation: 10s linear 0s normal none infinite animate;
  
 }
+
 #cover-div-right {
 	min-height: 100%;
-	width: 50%;
-	max-width: 50%;
+	width: 100%;
+	max-width: 100%;
 	z-index: 3;
 	float: right;
-	background: url('../img/right.jpg') repeat 0 0;
-	background-size: cover;
+	background: url('../img/cartoon.png') repeat 0 0;*/
+	background-position: center;
+    background-size: cover;
+	
+	}
+	
+	/*
 	-webkit-animation: 10s linear 0s normal none infinite animate-right;
 	-moz-animation: 10s linear 0s normal none infinite animate-right;
 	-ms-animation: 10s linear 0s normal none infinite animate-right;
@@ -123,15 +129,17 @@ body {
 @keyframes animate-right {
 	from {background-position:100vw 0;}
 	to {background-position: 0 0;}
-}
+} */
 
 
 
-#full-image-style {
+
 	/*max-width: 100%;
 	height: auto;
 	position: relative;*/
-	
+
+#full-image-style {	
+
 	background-image: url(../img/kansisuo.jpg);
     min-height: 100%;
     background-position: center;
@@ -148,6 +156,7 @@ body {
     transform: translate(-50%,-50%);
     z-index: 1;
     width: 30%;
+    text-align: center;
     
 }
 
@@ -212,6 +221,25 @@ body {
 .content-div-1, .content-div-2, .content-div-3 {
 	display: none;
 }
+
+.typed-text {
+	font-family: 'Anton', sans-serif;
+    transform: translate(-50%,0);
+    font-size: 5vw;;
+    color: #FFF;
+    text-transform: uppercase;	
+}
+
+.typed-holder {
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 85%;
+    text-align: center;
+}
+
 
 
 
