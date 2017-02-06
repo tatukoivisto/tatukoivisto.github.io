@@ -35,9 +35,9 @@ function hideCover() {
 	$("#cover-div-right").fadeOut(800);
 	//$("#cover-div-left").fadeOut(1000);
 	$("#logo-container").delay(800).animate({top: "20%"},1000);
-	
-	$(".content-div-1").delay(2000).show(500);
-	$(".content-div-2").delay(2250).show(500);
-	$(".content-div-3").delay(2500).show(500);
+
+	$(".content-div-1").delay(2000).fadeIn();
+	$(".content-div-2").delay(2250).fadeIn();
+	$(".content-div-3").delay(2500).fadeIn();
 }
 
