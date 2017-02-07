@@ -37,7 +37,7 @@ function hideCover() {
 	$("#logo-container").delay(800).animate({top: "20%"},1000);
 
 	$(".content-div-1").delay(2000).fadeIn();
-	$(".content-div-2").delay(2250).fadeIn();
-	$(".content-div-3").delay(2500).fadeIn();
+	$(".content-div-2").delay(2300).fadeIn();
+	$(".content-div-3").delay(2800).fadeIn();
 }
 
