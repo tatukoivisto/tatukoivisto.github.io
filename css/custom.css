@@ -1,12 +1,11 @@
-  html {
-	height: 100%;
-	
-}
-body {
-	font-family: 'Roboto Condensed', sans-serif;
-	margin: 0;
-	height: 100%
-}
+ html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+		font-family: 'Roboto Condensed', sans-serif;
+    }
+
+
 
 #main-navigation {
 	
@@ -58,7 +57,7 @@ body {
  
 }
 
-#cover-div-right {
+#cartoon-cover {
 	min-height: 100%;
 	width: 100%;
 	max-width: 100%;
@@ -224,22 +223,47 @@ body {
 
 .typed-text {
 	font-family: 'Anton', sans-serif;
-    transform: translate(-50%,0);
-    font-size: 5vw;;
+    transform: translate(-50%,-50);
+    font-size: 5vw;
     color: #FFF;
-    text-transform: uppercase;	
+    text-transform: uppercase;
+    text-align: center;	
+}
+
+#small-typed {
+	  font-size: 2.5vw;
 }
 
 .typed-holder {
 	position: absolute;
-    top: 30%;
+
     left: 50%;
+ 	margin: 0 auto;
     transform: translate(-50%,-50%);
     z-index: 1;
     width: 85%;
     text-align: center;
 }
+#big-typed-holder {
 
+    top: 30%;
+    left: 50%;
+ 	margin: 0 auto;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 85%;
+    text-align: center;
+}
+#small-typed-holder {
+
+    top: 45%;
+    left: 50%;
+ 	margin: 0 auto;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 85%;
+    text-align: center;
+}
 
 
 
@@ -259,3 +283,45 @@ body {
 	top: 58%;
 	}
 }
+
+
+.panel {
+	height: 100%;
+	width: 100%;
+}
+
+.panel.cartoon {
+
+}
+
+.panel.green {
+
+}
+
+.blue {
+	background-color: blue;
+}
+.green {
+	background-color: #9A8B68;
+}
+.yellow {
+	background-color: yellow;
+}
+
+.swan {
+	position: absolute;
+	width: 7%;
+	z-index: 11;
+	top: 58%;
+		
+}
+.corner-logo {
+	height: 60px;
+	width: 60px;
+	background-color: blue;
+	position: absolute;
+}
+#swan-style {
+	width: 100%;
+}
+

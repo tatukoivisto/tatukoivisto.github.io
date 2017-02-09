@@ -1,8 +1,6 @@
+
+
 $(document).ready(function() {
-
-
-
-
 
 	$("#logo-style").click(hideCover);
 
@@ -27,12 +25,11 @@ $(document).ready(function() {
 
 });
 
-
 function hideCover() {
 
 	$("#full-image-style").fadeIn(800);
 	$(".typed-text").hide();
-	$("#cover-div-right").fadeOut(800);
+	$("#cartoon-cover").fadeOut(800);
 	//$("#cover-div-left").fadeOut(1000);
 	$("#logo-container").delay(800).animate({top: "20%"},1000);
 
@@ -40,4 +37,29 @@ function hideCover() {
 	$(".content-div-2").delay(2300).fadeIn();
 	$(".content-div-3").delay(2800).fadeIn();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
