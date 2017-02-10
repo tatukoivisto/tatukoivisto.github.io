@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
 
-	
+
 	var swanTween = tl.to(swan, 15, {y: "100", x: "700", scale: "1.4", ease: Power1.easeIn})
 	.to(swan, 1, {rotationY:180})
 	.to(swan, 6, {x: "350", ease: Power1.easeInOut}, "toLeft")
@@ -21,74 +21,107 @@ $(document).ready(function() {
 
 
 /*
-	tl.to(typed, 0, {autoAlpha: 0},2)
-	.to(cartoon, 2, {autoAlpha: 0},"image")
-	.to(bgImage, 2, {display: "block"},"image")
-	.to(logo, 5, {ease: Expo.easeOut, top: "20%"});
-	*/
+tl.to(typed, 0, {autoAlpha: 0},2)
+.to(cartoon, 2, {autoAlpha: 0},"image")
+.to(bgImage, 2, {display: "block"},"image")
+.to(logo, 5, {ease: Expo.easeOut, top: "20%"});
+*/
 
-	/* SCROLL MAGIC */
+/* SCROLL MAGIC */
 
-	var controller = new ScrollMagic.Controller({
-		globalSceneOptions: {
-			triggerHook: 'onLeave'
-		}
-	});
-
-
-	/* SLIDES 
-	var slides = document.querySelectorAll("section.panel");
-		for (var i=0; i<2; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i])
-				.addIndicators() // add indicators (requires plugin)
-				.addTo(controller);
-		}
+var controller = new ScrollMagic.Controller({
+	globalSceneOptions: {
+		triggerHook: 'onCenter'
+	}
+});
 
 
-
-		var cartoonPn = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 450})
-		.setPin("#cartoon-cover")
-		.offset(100)
-		.addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
-		*/
+/* SLIDES 
+var slides = document.querySelectorAll("section.panel");
+for (var i=0; i<2; i++) {
+new ScrollMagic.Scene({
+triggerElement: slides[i]
+})
+.setPin(slides[i])
+.addIndicators() // add indicators (requires plugin)
+.addTo(controller);
+}
 
 
 
-				var scene = new ScrollMagic.Scene()				
-				.setPin("#big-typed-holder")
-				.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-				.addTo(controller);	
-
-				var scene = new ScrollMagic.Scene()				
-				.setPin("#small-typed-holder")
-				.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-				.addTo(controller);	
+var cartoonPn = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 450})
+.setPin("#cartoon-cover")
+.offset(100)
+.addIndicators() // add indicators (requires plugin)
+.addTo(controller);
+*/
 
 
-					var scene = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 400})
-					// trigger a velocity opaticy animation
-					.offset(50)
-					.setTween(".typed-holder", 0.5, {y:"-=100", autoAlpha:0})
-					.addIndicators({name: "magic"}) // add indicators (requires plugin)
-					.addTo(controller);
+/* TYPED TEXTS PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".typed-holder")
+.addTo(controller);	
+
+
+/* TYPED TEXT DISAPEAR */
+var scene = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 350})
+.offset(500)
+.setTween(".typed-holder", 0.5, {y:"-=80", autoAlpha:0})
+.addIndicators({name: "magic"}) 
+.addTo(controller);
+
+
+/* TYPED TEXTS */
+$("#big-typed").typed({
+	strings: ["Suomalainen turve"],
+	typeSpeed: 130,
+	showCursor: false
+});
+$("#small-typed").typed({
+	strings: ["Hyödyt, haitat ja harhaluulot"],
+	typeSpeed: 130,
+	showCursor: false,
+	startDelay: 3500
+});
+
+
+/* FIRST TEXT-HOLDER PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin("#first-text-holder")
+.addTo(controller);	
+
+/* FIRST TEXT-HOLDER APPEARING */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(200)
+.setTween("#first-text-holder", 0.5, {y:"-=200", autoAlpha:1})
+.addIndicators({name: "water-text"}) 
+.addTo(controller);
+
+/* WATER PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".moving-water")
+.addTo(controller);	
+
+/* WATER RISING */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+.offset(370)
+.setTween(".moving-water", 0.5, {y:"-=500"})
+.addIndicators({name: "water-rising"}) 
+.addTo(controller);
+
+/* GROUND PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".water-ground")
+.addTo(controller);	
 
 
 
-					$("#real-typed").typed({
-						strings: ["Suomalainen turve."],
-						typeSpeed: 180,
-						showCursor: false
-					});
-					$("#small-typed").typed({
-						strings: ["Hyödyt, haitat ja harhaluulot."],
-						typeSpeed: 180,
-						showCursor: false,
-						startDelay: 5000
-					});
 
 
-				});
+
+
+
+
+});
+
+
