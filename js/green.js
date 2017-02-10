@@ -117,9 +117,38 @@ var scene = new ScrollMagic.Scene()
 /* WATER GROUND RISING */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
 .offset(370)
-.setTween(".water-ground", 0.5, {y:"-=100"})
+.setTween(".water-ground", 0.5, {y:"-=115"})
 .addIndicators({name: "water-rising"}) 
 .addTo(controller);
+
+/* LEFT ROCK PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".left-rock-holder")
+.addTo(controller);	
+
+/* LEFT ROCK APPEARING */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(750)
+.setTween(".left-rock-holder", 1, {width:"14%", ease: Elastic.easeOut.config(1, 0.3)})
+.addIndicators({name: "water-text"}) 
+.addTo(controller);
+
+
+/* RIGHT ROCK PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".right-rock-holder")
+.addTo(controller);	
+
+/* RIGHT ROCK APPEARING */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(800)
+.setTween(".right-rock-holder", 1, {width:"10%", ease: Elastic.easeOut.config(1, 0.3)})
+.addIndicators({name: "water-text"}) 
+.addTo(controller);
+
+
+
+
 
 
 

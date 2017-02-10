@@ -179,7 +179,7 @@
     
 }
 
-#logo-style {
+.image-style {
 	width: 100%;
 	position: relative;
 }
@@ -353,11 +353,30 @@
 	position: absolute;
 	background: url('../img/ground.png') repeat 0 0;
 	background-size: cover;
-	height: 15%;
+	height: 20%;
 	top: 100%;
 	z-index: 1;
 	
 }
+
+.left-rock-holder {
+	position: absolute;
+    top: 95%;
+    left: 25%;
+    transform: translate(-50%,-100%);
+    z-index: 2;
+    width: 0%;
+}
+
+.right-rock-holder {
+	position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 0%;
+}
+
 .moving-water {
 	width: 100%;
 	max-width: 100%;
