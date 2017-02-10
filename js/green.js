@@ -60,12 +60,12 @@ $(document).ready(function() {
 
 				var scene = new ScrollMagic.Scene()				
 				.setPin("#big-typed-holder")
-				//.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+				.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
 				.addTo(controller);	
 
 				var scene = new ScrollMagic.Scene()				
 				.setPin("#small-typed-holder")
-				//.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+				.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
 				.addTo(controller);	
 
 
@@ -73,19 +73,19 @@ $(document).ready(function() {
 					// trigger a velocity opaticy animation
 					.offset(50)
 					.setTween(".typed-holder", 0.5, {y:-100, autoAlpha:0})
-					//.addIndicators({name: "magic"}) // add indicators (requires plugin)
+					.addIndicators({name: "magic"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 
 
 					$("#real-typed").typed({
 						strings: ["Suomalainen turve."],
-						typeSpeed: 200,
+						typeSpeed: 180,
 						showCursor: false
 					});
 					$("#small-typed").typed({
 						strings: ["Hyödyt, haitat ja harhaluulot."],
-						typeSpeed: 200,
+						typeSpeed: 180,
 						showCursor: false,
 						startDelay: 5000
 					});
