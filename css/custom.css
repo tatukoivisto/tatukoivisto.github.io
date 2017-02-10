@@ -6,7 +6,6 @@
     }
 
 
-
 #main-navigation {
 	
 	text-align: center;
@@ -234,11 +233,20 @@
 	  font-size: 2.5vw;
 }
 
+.first-header{
+	text-align: center
+}
+
 .typed-holder {
+	display: inline-block;
+	border-radius: 8px;
+	border: 0px solid white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 5px;
 	position: absolute;
 
-    left: 50%;
- 	margin: 0 auto;
+
     transform: translate(-50%,-50%);
     z-index: 1;
     width: 85%;
@@ -247,7 +255,7 @@
 #big-typed-holder {
 
     top: 30%;
-    left: 50%;
+	left: 50%;
  	margin: 0 auto;
     transform: translate(-50%,-50%);
     z-index: 1;
@@ -324,4 +332,6 @@
 #swan-style {
 	width: 100%;
 }
-
+.scrollmagic-pin-spacer {
+	width: 0 !important;
+}
