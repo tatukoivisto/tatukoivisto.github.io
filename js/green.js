@@ -72,7 +72,7 @@ $(document).ready(function() {
 					var scene = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 400})
 					// trigger a velocity opaticy animation
 					.offset(50)
-					.setTween(".typed-holder", 0.5, {y:-100, autoAlpha:0})
+					.setTween(".typed-holder", 0.5, {y:"-=100", autoAlpha:0})
 					.addIndicators({name: "magic"}) // add indicators (requires plugin)
 					.addTo(controller);
 
