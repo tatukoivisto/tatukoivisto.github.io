@@ -11,8 +11,7 @@ $(document).ready(function() {
 	var swan = $(".swan");
 
 
-
-
+	/* SWAN ANIMATION */
 	var swanTween = tl.to(swan, 15, {y: "100", x: "700", scale: "1.4", ease: Power1.easeIn})
 	.to(swan, 1, {rotationY:180})
 	.to(swan, 6, {x: "350", ease: Power1.easeInOut}, "toLeft")
@@ -28,7 +27,6 @@ tl.to(typed, 0, {autoAlpha: 0},2)
 */
 
 /* SCROLL MAGIC */
-
 var controller = new ScrollMagic.Controller({
 	globalSceneOptions: {
 		triggerHook: 'onCenter'
@@ -146,8 +144,71 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .addIndicators({name: "water-text"}) 
 .addTo(controller);
 
+/* LEFT PLANT PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".left-plant")
+.addTo(controller);	
 
 
+/* MIDDLE PLANT PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".middle-plant")
+.addTo(controller);	
+
+/* RIGHT PLANT PINNED */
+var scene = new ScrollMagic.Scene()				
+.setPin(".right-plant")
+.addTo(controller);	
+
+/* LEFT PLANT GROW */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(850)
+.setTween(".svg-left", 1, {strokeDashoffset:"0px"})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+
+/* MIDDLE PLANT GROW */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(880)
+.setTween(".svg-middle", 1.3, {strokeDashoffset:"0px"})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+/* RIGHT PLANT GROW */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(850)
+.setTween(".svg-right", 1.2, {strokeDashoffset:"0px"})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+/* PLANTS INTO PEAT */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(1000)
+.setTween("path", {stroke:"#453B31"})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+TweenMax.staggerTo("svg", 2, {y: "+=5", yoyo:true, repeat:-1, delay: "0.2"}, 0.4)
+
+/* WATER SECTOR DISAPEAR */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(1300)
+.setTween("path, .left-rock-holder, .right-rock-holder, .moving-water, #first-text-holder", {y: "-=200",autoAlpha:0})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(1300)
+.setTween(".water-ground", {y: "-=200"})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(1500)
+.setTween(".water-ground", {autoAlpha: 0})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
 
 
 
