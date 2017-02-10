@@ -114,8 +114,12 @@ var scene = new ScrollMagic.Scene()
 .setPin(".water-ground")
 .addTo(controller);	
 
-
-
+/* WATER GROUND RISING */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+.offset(370)
+.setTween(".water-ground", 0.5, {y:"-=100"})
+.addIndicators({name: "water-rising"}) 
+.addTo(controller);
 
 
 
