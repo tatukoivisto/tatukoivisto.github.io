@@ -1,4 +1,6 @@
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 $(document).ready(function() {
 
@@ -217,7 +219,7 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* KASA APPEARANCE */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 100})
 .offset(1500)
 .setTween(".kasa-holder", 0.5, {autoAlpha:1,width:"80%"})
 .addIndicators({name: "kasa"}) 
@@ -230,7 +232,7 @@ var scene = new ScrollMagic.Scene()
 
 
 /* KASA TEXT APPEARANCE */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 100})
 .offset(1600)
 .setTween("#kasa-text-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
@@ -241,17 +243,17 @@ var scene = new ScrollMagic.Scene()
 .setPin("#kasa-info-holder")
 .addTo(controller);	*/
 
-/* TEXT + KASA UP */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+/* TEXT + KASA HOVER */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .offset(1700)
-.setTween("#kasa-text-holder, .kasa-holder", 0.2, {y: "-=150"})
+.setTween("#kasa-text-holder, .kasa-holder", 2, {y: "+=10", yoyo:true, repeat:-1, delay: "0.2"})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
 
 
 /* KASA INFO APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2000)
+.offset(2200)
 .setTween("#kasa-info-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
@@ -269,14 +271,14 @@ var scene = new ScrollMagic.Scene()
 
 /* MURU APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(1900)
+.offset(1800)
 .setTween(".muru-holder", 0.1, {autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2000)
-.setTween(".muru-holder", 1.5, {rotation: 100 ,y: "+=420" ,autoAlpha:1, ease: Bounce.easeOut})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(1900)
+.setTween(".muru-holder", 5, {rotation: 100 ,y: "+=280", x: "-=75" ,autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
