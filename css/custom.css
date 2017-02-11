@@ -20,7 +20,12 @@
 	color: #FFF;
 	text-transform: uppercase;
 	margin: 0;
-
+}
+.basic-text {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFF;
+	font-size: 1.5vw;
+	margin-left: 15px;
 }
 .scrollmagic-pin-spacer {
 	width: 0 !important;
@@ -357,10 +362,10 @@
 }
 .muru-holder {
 	position: absolute;
-    top: 30%;
+    top: 45%;
     left: 25%;
     transform: translate(-50%,-50%);
     z-index: 2;
-    width: 4%;
+    width: 2%;
     opacity: 0;
 }
