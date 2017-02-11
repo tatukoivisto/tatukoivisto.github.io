@@ -1,6 +1,4 @@
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+
 
 $(document).ready(function() {
 
@@ -232,7 +230,7 @@ var scene = new ScrollMagic.Scene()
 
 
 /* KASA TEXT APPEARANCE */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 100})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .offset(1600)
 .setTween("#kasa-text-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
@@ -243,17 +241,17 @@ var scene = new ScrollMagic.Scene()
 .setPin("#kasa-info-holder")
 .addTo(controller);	*/
 
-/* TEXT + KASA HOVER */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+/* TEXT + KASA UP */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(1700)
-.setTween("#kasa-text-holder, .kasa-holder", 2, {y: "+=25", yoyo:true, repeat:-1, delay: "0.2"})
+.setTween("#kasa-text-holder, .kasa-holder", 0.2, {y: "-=150"})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
 
 
 /* KASA INFO APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2200)
+.offset(2000)
 .setTween("#kasa-info-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
@@ -271,14 +269,14 @@ var scene = new ScrollMagic.Scene()
 
 /* MURU APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(1800)
+.offset(1900)
 .setTween(".muru-holder", 0.1, {autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(1900)
-.setTween(".muru-holder", 5, {rotation: 100 ,y: "+=280", x: "-=75" ,autoAlpha:1})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(2000)
+.setTween(".muru-holder", 1.5, {rotation: 100 ,y: "+=420" ,autoAlpha:1, ease: Bounce.easeOut})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
