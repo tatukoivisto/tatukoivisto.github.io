@@ -251,7 +251,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 
 /* KASA INFO APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2100)
+.offset(2000)
 .setTween("#kasa-info-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
@@ -275,7 +275,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2100)
+.offset(2000)
 .setTween(".muru-holder", 1.5, {rotation: 100 ,y: "+=420" ,autoAlpha:1, ease: Bounce.easeOut})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
