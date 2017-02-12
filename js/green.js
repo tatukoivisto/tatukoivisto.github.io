@@ -185,9 +185,22 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
+/* TURVE CREATION HOLDER PIN */
+var scene = new ScrollMagic.Scene()				
+.setPin("#turve-creation-holder")
+.addTo(controller);	
+
+/* TURVE CREATION APPEARANCE */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 50})
+.offset(1000)
+.setTween("#turve-creation-holder", 0.5, {y:"-=100", autoAlpha:1})
+.addIndicators({name: "creation text"}) 
+.addTo(controller);
+
+
 /* PLANTS INTO PEAT */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 70})
-.offset(950)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(900)
 .setTween("path", {stroke:"#453B31"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
@@ -197,7 +210,7 @@ TweenMax.staggerTo("svg", 2, {y: "+=5", yoyo:true, repeat:-1, delay: "0.2"}, 0.4
 /* WATER AREA DISAPEAR */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(1200)
-.setTween("path, .left-rock-holder, .right-rock-holder, .moving-water, #first-text-holder", {y: "-=200",autoAlpha:0})
+.setTween("path, .left-rock-holder, .right-rock-holder, .moving-water, #first-text-holder, #turve-creation-holder", {y: "-=200",autoAlpha:0})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
@@ -250,7 +263,6 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
 
-
 /* KASA INFO APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .offset(2200)
@@ -262,6 +274,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 var scene = new ScrollMagic.Scene()				
 .setPin("#kasa-info-holder")
 .addTo(controller);	
+
 
 /* MURU HOLDER PIN */
 var scene = new ScrollMagic.Scene()				
