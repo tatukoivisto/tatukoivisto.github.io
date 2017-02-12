@@ -128,9 +128,9 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* LEFT ROCK APPEARING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(750)
-.setTween(".left-rock-holder", 1, {width:"14%", ease: Elastic.easeOut.config(1, 0.3)})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 150})
+.offset(700)
+.setTween(".left-rock-holder", 2, {width:"14%", ease: Elastic.easeOut.config(1, 0.3)})
 .addIndicators({name: "water-text"}) 
 .addTo(controller);
 
@@ -141,9 +141,9 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* RIGHT ROCK APPEARING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(800)
-.setTween(".right-rock-holder", 1, {width:"10%", ease: Elastic.easeOut.config(1, 0.3)})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 150})
+.offset(750)
+.setTween(".right-rock-holder", 2, {width:"10%", ease: Elastic.easeOut.config(1, 0.3)})
 .addIndicators({name: "water-text"}) 
 .addTo(controller);
 
@@ -258,7 +258,7 @@ var scene = new ScrollMagic.Scene()
 
 /* TEXT + KASA HOVER */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(1900)
+.offset(2001)
 .setTween("#kasa-text-holder, .kasa-holder", 2, {y: "+=10", yoyo:true, repeat:-1, delay: "0.2"})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
@@ -288,7 +288,6 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
 .setTween(".muru-holder", 0.1, {autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
-
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
 .offset(2100)
 .setTween(".muru-holder", 5, {rotation: 100 ,y: "+=280", x: "-=75" ,autoAlpha:1})
