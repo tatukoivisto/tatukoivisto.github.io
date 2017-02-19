@@ -104,7 +104,7 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* WATER RISING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 600})
 .offset(370)
 .setTween(".moving-water", 0.5, {y:"-=500"})
 .addIndicators({name: "water-rising"}) 
@@ -116,7 +116,7 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* WATER GROUND RISING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 600})
 .offset(370)
 .setTween(".water-ground", 0.5, {y:"-=115"})
 .addIndicators({name: "water-rising"}) 
@@ -128,8 +128,8 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* LEFT ROCK APPEARING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 150})
-.offset(700)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+.offset(850)
 .setTween(".left-rock-holder", 2, {width:"14%", ease: Elastic.easeOut.config(1, 0.3)})
 .addIndicators({name: "water-text"}) 
 .addTo(controller);
@@ -141,8 +141,8 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* RIGHT ROCK APPEARING */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 150})
-.offset(750)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+.offset(1050)
 .setTween(".right-rock-holder", 2, {width:"10%", ease: Elastic.easeOut.config(1, 0.3)})
 .addIndicators({name: "water-text"}) 
 .addTo(controller);
@@ -164,23 +164,23 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 /* LEFT PLANT GROW */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(800)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 400})
+.offset(1250)
 .setTween(".svg-left", 1, {strokeDashoffset:"0px"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
 
 /* MIDDLE PLANT GROW */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section",  duration: 200})
-.offset(840)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section",  duration: 300})
+.offset(1250)
 .setTween(".svg-middle", 1.3, {strokeDashoffset:"0px"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
 /* RIGHT PLANT GROW */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section",  duration: 200})
-.offset(820)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section",  duration: 350})
+.offset(1250)
 .setTween(".svg-right", 1.2, {strokeDashoffset:"0px"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
@@ -192,7 +192,7 @@ var scene = new ScrollMagic.Scene()
 
 /* TURVE CREATION APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 100})
-.offset(1150)
+.offset(1500)
 .setTween("#turve-creation-holder", 0.5, {y:"-=100", autoAlpha:1})
 .addIndicators({name: "creation text"}) 
 .addTo(controller);
@@ -200,7 +200,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1
 
 /* PLANTS INTO PEAT */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(1100)
+.offset(1600)
 .setTween("path", {stroke:"#453B31"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
@@ -209,21 +209,33 @@ TweenMax.staggerTo("svg", 2, {y: "+=5", yoyo:true, repeat:-1, delay: "0.2"}, 0.4
 
 /* WATER AREA DISAPEAR */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(1500)
+.offset(2000)
 .setTween("path, .left-rock-holder, .right-rock-holder, .moving-water, #first-text-holder, #turve-creation-holder", {y: "-=200",autoAlpha:0})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(1500)
+.offset(2000)
 .setTween(".water-ground", {y: "-=200"})
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(1700)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration:2})
+.offset(2200)
 .setTween(".water-ground", {autoAlpha: 0})
 .addIndicators({name: "stroke"}) 
+.addTo(controller);
+
+/* KASA COVER */
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#kasa-cover")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(2300)
+.setTween("#kasa-cover", 0.2, {x:"-50%", y:"-50%"})
+.addIndicators({name: "COVER!!"}) 
 .addTo(controller);
 
 /* KASA PIN */
@@ -233,7 +245,7 @@ var scene = new ScrollMagic.Scene()
 
 /* KASA APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(1750)
+.offset(2350)
 .setTween(".kasa-holder", 0.5, {autoAlpha:1,width:"80%"})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
@@ -246,10 +258,12 @@ var scene = new ScrollMagic.Scene()
 
 /* KASA TEXT APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(1800)
+.offset(2400)
 .setTween("#kasa-text-holder", 0.2, {y: "=-80", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
+
+
 
 /* KASA TEXT PIN 
 var scene = new ScrollMagic.Scene()				
@@ -258,8 +272,8 @@ var scene = new ScrollMagic.Scene()
 
 /* KASA INFO APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2400)
-.setTween("#kasa-info-holder", 0.2, {y: "=-80", autoAlpha:1})
+.offset(2600)
+.setTween("#kasa-info-holder", 0.2, {y: "=-100", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
 
@@ -277,29 +291,195 @@ var scene = new ScrollMagic.Scene()
 
 /* MURU APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration:1})
-.offset(2000)
+.offset(2600)
 .setTween(".muru-holder", 0.1, {autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(2100)
-.setTween(".muru-holder", 5, {rotation: 100 ,y: "+=280", x: "-=75" ,autoAlpha:1})
+.offset(2700)
+.setTween(".muru-holder", 5, {rotation: 100 ,y: "+=320", x: "-=175" ,autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
 /* MURU HOVER */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2351)
-.setTween(".muru-holder", 5, {rotation: "+=600", yoyo:true, repeat:-1, delay: "0.1", ease: Back.easeInOut})
+.offset(2951)
+.setTween(".muru-holder", 0.3, { scale:"1.2", yoyo:true, repeat:-1, delay: "0.1", ease: Back.easeInOut})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
 
 
 
+/* KASA AREA DISAPEAR */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(3200)
+.setTween(".kasa-holder, #kasa-text-holder, #kasa-info-holder, .muru-holder, #kasa-cover", {autoAlpha:0})
+.addIndicators({name: "stroke"}) 
+.addTo(controller);
 
 
 
+/* TRAKTORI COVER */
+var scene = new ScrollMagic.Scene()				
+.setPin("#traktori-cover")
+.addTo(controller);	
 
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(3100)
+.setTween("#traktori-cover", 0.2, {x:"-50%", y:"-50%"})
+.addIndicators({name: "COVER!!"}) 
+.addTo(controller);
+
+/* TRAKTORI PIN */
+var scene = new ScrollMagic.Scene()				
+.setPin("#traktori-holder")
+.addTo(controller);	
+/* TRAKTORI MOVEMENT */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2000})
+.offset(3100)
+.setTween("#traktori-holder", 0.2, {x:"350%", y:"-200%", ease: SlowMo.ease.config(0.1, 0.7, false)})
+.addIndicators({name: "COVER!!"}) 
+.addTo(controller);
+/* TRAKTORI VIBRATION */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
+.offset(3200)
+.setTween("#traktori-holder", 0.05, {scale:1.004, yoyo:true, repeat:-1, delay: "0.1", ease: Back.easeInOut})
+.addIndicators({name: "COVER!!"}) 
+.addTo(controller);
+
+
+/* PRODUCTION TEXT */
+var scene = new ScrollMagic.Scene()				
+.setPin("#turve-production-holder-1")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(3200)
+.setTween("#turve-production-holder-1", 0.5, {y:"-=100", autoAlpha:1})
+.addIndicators({name: "PFORU"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(3400)
+.setTween("#turve-production-holder-1", {y:"-=100", autoAlpha:0})
+.addIndicators({name: "PRODUCTION"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#turve-production-holder-2")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(3600)
+.setTween("#turve-production-holder-2", 0.5, {y:"-=100", autoAlpha:1})
+.addIndicators({name: "PFORU"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(3800)
+.setTween("#turve-production-holder-2", {y:"-=100", autoAlpha:0})
+.addIndicators({name: "PRODUCTION"}) 
+.addTo(controller);
+
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#turve-production-holder-3")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(4000)
+.setTween("#turve-production-holder-3", 0.5, {y:"-=100", autoAlpha:1})
+.addIndicators({name: "PFORU"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(4200)
+.setTween("#turve-production-holder-3", {y:"-=100", autoAlpha:0})
+.addIndicators({name: "PRODUCTION"}) 
+.addTo(controller);
+
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#turve-production-holder-4")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(4400)
+.setTween("#turve-production-holder-4", 0.5, {y:"-=100", autoAlpha:1})
+.addIndicators({name: "PFORU"}) 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(4600)
+.setTween("#turve-production-holder-4", {y:"-=100", autoAlpha:0})
+.addIndicators({name: "PRODUCTION"}) 
+.addTo(controller);
+
+/* PRODUCTION TEXT END*/
+
+/* SUOMI COVER */
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-cover")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(4800)
+.setTween("#suomi-cover", 0.2, {x:"-50%", y:"-50%"})
+.addIndicators({name: "joku"}) 
+.addTo(controller);
+
+/* SUOMI APPEARANCE*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-holder")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(5000)
+.setTween("#suomi-holder", 0.2, {autoAlpha:1, scale:1})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
+/* SUOMI ICON APPEARANCE*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-icon-1")
+.addTo(controller);	
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-icon-2")
+.addTo(controller);	
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-icon-3")
+.addTo(controller);	
+/* SUOMI ICON TWEEN */
+var staggerTween = TweenMax.staggerTo(".suomi-icon-holder", 1, {autoAlpha:1, scale:1, ease: Elastic.easeOut.config(1, 0.3)}, 1);
+/* SUOMI ICON TWEEN SCROLL*/
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 450})
+.offset(5250)
+.setTween(staggerTween)
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
+/* YMPARISTO COVER */
+var scene = new ScrollMagic.Scene()				
+.setPin("#ymparisto-cover")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(5800)
+.setTween("#ymparisto-cover", 0.2, {x:"-50%", y:"-50%"})
+.addIndicators({name: "joku"}) 
+.addTo(controller);
+
+
+/* RUNKO APPEARANCE*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#runko-holder")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(6000)
+.setTween("#runko-holder", 0.2, {autoAlpha:1, scale:1})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
 
 
 

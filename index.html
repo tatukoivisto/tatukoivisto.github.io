@@ -6,23 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>TURVE</title>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-
-
-  <link href="css/custom.css" rel="stylesheet">
-  <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/custom.js"></script>
   <script type="text/javascript"></script>
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+
+  
+
+  <script src="js/TweenMax.min.js"></script>
+
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/animation.gsap.min.js"></script>
+  <script src="js/debug.addIndicators.min.js"></script>
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <script src="js/typed.js"></script>
+  <script src="js/green.js"></script>
+
+
 
   <!-- typed.js -->
-  <script src="js/typed.js"></script>
+  
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,76 +41,170 @@
     </head>
     <body>
 
-      <nav id="main-navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#first">Posts</a></li>    
-        </ul>
-      </nav>
 
 
-
-
-      <div  id="cartoon-cover"></div>
-      <!--<div  id="cover-div-left"></div>-->
-      <div id="full-image-style"></div>
-
-      <div class="typed-holder">
-        <span class="typed-text">TURVE </span><span class="typed-text" id="real-typed"></span>
+        <div class="typed-holder">
+          <p class="big-text" id="big-typed"></p> <br>
+          <p class="small-text" id="small-typed"></p>
       </div>
+      <section class="cartoon-section">
+        <div id="cartoon-cover">
+          <div class="swan">
+            <img id="swan-style" src="img/swan.png">
+          </div>
+        </div>
+      </section>
+      
+
+        <div class="text-holder" id="first-text-holder">
+            <p class="small-text">SUOMEN SOIHIN KASVAA UUTTA TURVETTA TÄLLÄKIN HETKELLÄ</p>
+          <p class="basic-text">Suomen kosteat olosuhteet ovat otollisiet turpeen syntymiselle</p>
+        </div>
+
+      
+      <div class="text-holder small-text-holder" id="turve-creation-holder">
+          <p class="basic-text">UUTTA TURVETTA SYNTYY, KUN KASVINOSAT MAATUVAT EPÄTÄYDELLISESTI HAPETTOMISSA JA KOSTEISSA OLOSUHTEISSA</p>
+      </div> 
+
+
+      
+      <section class="water-section">
+        <div class="left-rock-holder">
+          <img class="image-style" src="img/right-rock.png">
+        </div>
+        <div class="right-rock-holder">
+          <img class="image-style" src="img/left-rock.png">
+        </div>
+        
+        <svg class="middle-plant" xmlns="http://www.w3.org/2000/svg" width="159" height="431" viewBox="0 0 159 431">
+          <path class="svg-middle" style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 607px; stroke-dashoffset: 607px;" fill="none" stroke="#51C51C" stroke-width="3.85" d="M2 429c13.082-54.724 155-43.933 155-106.706S54.766 281.53 54.766 212.198c0-69.332 42.433-54.505 42.433-113.853C97.2 38.995 32.78 2 32.78 2"/>
+        </svg>
+        <svg class="right-plant" xmlns="http://www.w3.org/2000/svg" width="142" height="412" viewBox="0 0 142 412">
+          <path class="svg-right" fill="none" stroke="#51C51C" stroke-width="3.85" d="M24.5 410C37.59 355.33 140 343.782 140 259.084S19.11 201.334 4.48 132.037C-10.15 62.74 62 68 34 2" style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 538px; stroke-dashoffset: 538px;"/>
+        </svg>
+        <svg class="left-plant" xmlns="http://www.w3.org/2000/svg" width="140" height="431" viewBox="0 0 140 431">
+          <path class="svg-left" fill="none" stroke="#51C51C" stroke-width="3.85" d="M114.95 429C101.886 374.276 2 403.565 2 318.782c0-84.784 136-74.764 136-134.883 0-60.12-92.203-49.33-92.203-108.678S84.215 2 84.215 2" style="stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 613px; stroke-dashoffset: 613px;"/>
+        </svg>
+        <div class="water-ground"></div>
+        <div class="moving-water"></div>  
+        <div class="text-holder" id="kasa-text-holder">
+          <p class="small-text">TURVEMAATA ON SUOMESSA YLI 9 MILJOONAA HEHTAARIA</p>
+        </div>
+        <div class="kasa-holder">
+          <img class="image-style" src="img/kasa.png">
+        </div>
+        <div class="text-holder small-text-holder" id="kasa-info-holder">
+          <p class="basic-text">TÄSTÄ AINOASTAAN 0,7% ON TURVETUOTANNON KÄYTÖSSÄ </p>
+        </div> 
+        <div class="muru-holder">
+          <img class="image-style" src="img/muru.png">
+        </div>
+
+      </section>
+      
+    <div id="kasa-cover"></div>
+
+
+    <div id="traktori-cover"></div>
+    <div id="traktori-holder">
+          <img class="image-style" src="img/traktori.png">
+    </div>
+
+    <div class="text-holder production-holder" id="turve-production-holder-1">
+          <p class="basic-text">anasta olla käytetyistä se liiallista tai ulkopuolinen tilanteeseen englannin potaatti patata bataattia myös. Suomessa löytämiään pieni sisältä kielessä se yksi sovittuja ja ja maalajeihin pohditaan aikoihin rikkoontuisivat.</p>
+    </div> 
+    <div class="text-holder production-holder" id="turve-production-holder-2">
+          <p class="basic-text">anasta olla käytetyistä se liiallista tai ulkopuolinen tilanteeseen englannin potaatti patata bataattia myös. Suomessa löytämiään pieni sisältä kielessä se yksi sovittuja ja ja maalajeihin pohditaan aikoihin rikkoontuisivat.</p>
+    </div> 
+    <div class="text-holder production-holder" id="turve-production-holder-3">
+          <p class="basic-text">anasta olla käytetyistä se liiallista tai ulkopuolinen tilanteeseen englannin potaatti patata bataattia myös. Suomessa löytämiään pieni sisältä kielessä se yksi sovittuja ja ja maalajeihin pohditaan aikoihin rikkoontuisivat.</p>
+    </div> 
+    <div class="text-holder production-holder" id="turve-production-holder-4">
+          <p class="basic-text">anasta olla käytetyistä se liiallista tai ulkopuolinen tilanteeseen englannin potaatti patata bataattia myös. Suomessa löytämiään pieni sisältä kielessä se yksi sovittuja ja ja maalajeihin pohditaan aikoihin rikkoontuisivat.</p>
+    </div> 
+
+    <div id="suomi-cover"></div>
+    <div class="suomi-icon-holder" id="suomi-icon-1">
+          <img class="image-style" src="img/kasvu.png">
+    </div>
+    <div class="suomi-icon-holder" id="suomi-icon-2">
+          <img class="image-style" src="img/raha.png">
+    </div>
+    <div class="suomi-icon-holder" id="suomi-icon-3">
+          <img class="image-style" src="img/hyvinvointi.png">
+    </div>
+    <div id="suomi-holder">
+          <img class="image-style" src="img/suomi.png">
+    </div>
+
+    <div id="ymparisto-cover"></div>
+     <div id="runko-holder">
+          <img class="image-style" src="img/runko.png">
+    </div>
+
+
+
+
+    
+    <section class="spacer-section"></section>
+    <section class="spacer-section" id="muru-section"></section>
+    <section class="spacer-section" id="muru-after-section"></section>
+     <section class="spacer-section"></section>
+    <section class="spacer-section"></section>
+    <section class="spacer-section"></section>
+    <section class="spacer-section"></section>
+    <section class="spacer-section"></section>
+      <!--
       <div id="logo-container">
           <img id="logo-style" src="img/logo.png">
       </div>
+    -->
 
-      <div class="content-div-1">
-        <div class="icon-container" id="first-icon">
-          <img class="icon-style" src="img/ymparisto.svg">
-        </div>
-        <div class="icon-text-holder" id="first-icon-text-holder">
-          <p>YMPÄRISTÖ</p>
-        </div>
+    <div class="content-div-1">
+      <div class="icon-container" id="first-icon">
+        <img class="icon-style" src="img/ymparisto.svg">
       </div>
-
-      <div class="content-div-2">
-        <div class="icon-container" id="second-icon">
-          <img class="icon-style" src="img/talous.svg">
-        </div>
-        <div class="icon-text-holder" id="second-icon-text-holder">
-          <p>TALOUS JA TYÖLLISYYS</p>
-        </div>
+      <div class="icon-text-holder" id="first-icon-text-holder">
+        <p>YMPÄRISTÖ</p>
       </div>
+    </div>
 
-      <div class="content-div-3">
-        <div class="icon-container" id="third-icon">
-          <img class="icon-style" src="img/energiantuotanto.svg">
-        </div>
-        <div class="icon-text-holder" id="third-icon-text-holder">
-          <p>ENERGIANTUOTANTO</p>
-        </div>
+    <div class="content-div-2">
+      <div class="icon-container" id="second-icon">
+        <img class="icon-style" src="img/talous.svg">
       </div>
+      <div class="icon-text-holder" id="second-icon-text-holder">
+        <p>TALOUS JA TYÖLLISYYS</p>
+      </div>
+    </div>
 
-
-
-      <section class="main-section">
-
-      </section>
-
-
-      <article>
-
-      </article>
-
-
-      <footer>
-
-      </footer>
-
+    <div class="content-div-3">
+      <div class="icon-container" id="third-icon">
+        <img class="icon-style" src="img/energiantuotanto.svg">
+      </div>
+      <div class="icon-text-holder" id="third-icon-text-holder">
+        <p>ENERGIANTUOTANTO</p>
+      </div>
+    </div>
 
 
 
 
 
+    <article>
 
-    </body>
-    </html>
+    </article>
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+  </body>
+  </html>

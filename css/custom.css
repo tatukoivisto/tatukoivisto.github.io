@@ -3,6 +3,7 @@
         margin: 0;
         padding: 0;
 		font-family: 'Roboto Condensed', sans-serif;
+		    background-color: #9A8B68;
     }
 
 .big-text {
@@ -30,7 +31,7 @@
 }
 
 .scrollmagic-pin-spacer {
-	width: 0 !important;
+	
 }
 
 
@@ -348,7 +349,7 @@
 	position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)!important;
+    transform: translate(-50%,-50%);
     z-index: 2;
     width: 0%;
     opacity: 0;
@@ -381,3 +382,117 @@
     width: 2%;
     opacity: 0;
 }
+
+.spacer-section {
+	height: 100%;
+	background-color: #9A8B68;
+}
+
+#muru-section {
+	background-color: #9A8B68;
+}
+#kasa-cover {
+	transform: translate(-150%,-50%);
+	top: 50% !important;
+	left: 50% !important;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+    background-color: #656A39;
+}
+#traktori-cover {
+	transform: translate(-150%,-50%);
+	top: 50% !important;
+	left: 50% !important;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+    background-color: #87884B;
+}
+
+#traktori-holder {
+	position: absolute;
+    transform: translate(-150%,-200%);
+    top: 50%;
+    left: 10%;
+    z-index: 4;
+    width: 30%;
+}
+
+.production-holder {
+	opacity: 0;
+	top: 50%;
+	text-align: center;
+	margin: 50px;
+	z-index: 3;
+	width: 85%;
+}
+
+#suomi-holder {
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0.1);
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    width: 30%;
+    opacity: 0;
+}
+#suomi-cover {
+	transform: translate(-150%,-50%);
+	top: 50% !important;
+	left: 50% !important;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+    background-color: #B3D1EF;
+}
+
+.suomi-icon-holder{
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0.1);
+    left: 20%;
+    z-index: 5;
+    width: 8%;
+    opacity: 0;	
+    margin-top:20px;
+}
+
+#suomi-icon-1 {
+	top: 30%;
+}
+
+#suomi-icon-2 {
+	top: 50%;
+}
+
+#suomi-icon-3 {
+	top: 70%;
+}
+
+#ymparisto-cover {
+	transform: translate(-150%,-50%);
+	top: 50% !important;
+	left: 50% !important;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+    background-color: #597095;
+}
+
+#runko-holder {
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0.1);
+    top: 50%;
+    left: 45%;
+    z-index: 5;
+    width: 30%;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
