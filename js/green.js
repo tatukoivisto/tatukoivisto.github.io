@@ -481,6 +481,13 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
 
+/* YMPÄRISTÖ COVER CHANGE*/
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1000})
+.offset(6200)
+.setTween("#ymparisto-cover", 0.2, {backgroundColor: "#B3D1EF"})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
 
 
 
