@@ -204,28 +204,38 @@
 	position: absolute;
     transform: translate(-50%,-50%);
     top: 57%;
-    left: 35%;
+    left: 20%;
     z-index: 6;
     width: 10%;
-    transition: all 0.2s ease;
+    /*transition: all 0.2s ease;*/
 }
-#mokki-holder-cover:hover {
+/*#mokki-holder-cover:hover {
     transform: translate(-50%,-50%) scale(1.2);
  
+}*/
+
+#savu-holder-cover {
+	position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 22.7%;
+    z-index: 5;
+    width: 0.2%;
+    /*transition: all 0.2s ease;*/
 }
 
 #tree-holder-cover {
 	position: absolute;
     transform: translate(-50%,-50%);
-    top: 54%;
-    left: 46%;
+    top: 61%;
+    left: 40%;
     z-index: 6;
-    width: 4%;
-    transition: all 0.2s ease;
+    width: 5%;
+    /*transition: all 0.2s ease;*/
 }
-#tree-holder-cover:hover {
+/*#tree-holder-cover:hover {
     transform: translate(-50%,-50%) scale(1.2);
-}
+}*/
 
 #traktori-holder-cover {
 	position: absolute;
@@ -234,11 +244,11 @@
     left: 65%;
     z-index: 6;
     width: 8%;
-    transition: all 0.2s ease;
+    /*transition: all 0.2s ease;*/
 }
-#traktori-holder-cover:hover {
+/*#traktori-holder-cover:hover {
     transform: translate(-50%,-50%) scale(1.2);
-}
+}*/
 
 #kivi-holder-cover {
 	position: absolute;
@@ -247,11 +257,11 @@
     left: 55%;
     z-index: 6;
     width: 3%;
-    transition: all 0.2s ease;
+    /*transition: all 0.2s ease;*/
 }
-#kivi-holder-cover:hover {
+/*#kivi-holder-cover:hover {
     transform: translate(-50%,-50%) scale(1.2);
-}
+}*/
 
 .corner-logo {
 	height: 60px;

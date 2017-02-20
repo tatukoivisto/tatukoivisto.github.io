@@ -12,6 +12,9 @@ $(document).ready(function() {
 	var bgImage = $("#full-image-style");
 	var tl = new TimelineLite();
 	var swan = $(".swan");
+	var traktori = $("#traktori-holder-cover");
+	var savu = $("#savu-holder-cover");
+
 
 
 	/* SWAN ANIMATION */
@@ -20,6 +23,11 @@ $(document).ready(function() {
 	.to(swan, 6, {x: "-=350", ease: Power1.easeInOut}, "toLeft")
 	.to(swan, 6, {y: "+=50", scale: "1.5", ease: Power1.easeInOut}, "toLeft")
 	.to(swan, 2, {y: "+=10", yoyo:true, repeat:-1, delay: "0.2"});
+
+TweenMax.to(traktori, 0.05, {scale:1.00, y:"+=0.3", yoyo:true, repeat:-1, delay: "2", ease: Back.easeInOut})
+TweenMax.to(traktori, 35, {scale:1.00, x:"+=300", ease: Back.easeInOut})
+
+TweenMax.to(savu, 3.5, {autoAlpha:0, y:"+=-20", repeat:-1, delay: "0.5"})
 
 
 /*
@@ -592,6 +600,9 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 8
 .setTween(appleTween)
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
+
+
+
 
 });
 
