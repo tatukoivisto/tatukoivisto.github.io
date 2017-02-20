@@ -15,10 +15,10 @@ $(document).ready(function() {
 
 
 	/* SWAN ANIMATION */
-	var swanTween = tl.to(swan, 15, {y: "100", x: "700", scale: "1.4", ease: Power1.easeIn})
+	var swanTween = tl.to(swan, 15, {y: "+=50", x: "+=500", scale: "1.4", ease: Power1.easeIn})
 	.to(swan, 1, {rotationY:180})
-	.to(swan, 6, {x: "350", ease: Power1.easeInOut}, "toLeft")
-	.to(swan, 6, {y: "150", scale: "1.5", ease: Power1.easeInOut}, "toLeft")
+	.to(swan, 6, {x: "-=350", ease: Power1.easeInOut}, "toLeft")
+	.to(swan, 6, {y: "+=50", scale: "1.5", ease: Power1.easeInOut}, "toLeft")
 	.to(swan, 2, {y: "+=10", yoyo:true, repeat:-1, delay: "0.2"});
 
 
@@ -271,8 +271,8 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	*/
 
 /* KASA INFO APPEARANCE */
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2600)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 100})
+.offset(2650)
 .setTween("#kasa-info-holder", 0.2, {y: "=-100", autoAlpha:1})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
@@ -291,19 +291,19 @@ var scene = new ScrollMagic.Scene()
 
 /* MURU APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration:1})
-.offset(2600)
+.offset(2500)
 .setTween(".muru-holder", 0.1, {autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(2700)
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(2500)
 .setTween(".muru-holder", 5, {rotation: 100 ,y: "+=320", x: "-=175" ,autoAlpha:1})
 .addIndicators({name: "muru"}) 
 .addTo(controller);
 
 /* MURU HOVER */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section"})
-.offset(2951)
+.offset(2701)
 .setTween(".muru-holder", 0.3, { scale:"1.2", yoyo:true, repeat:-1, delay: "0.1", ease: Back.easeInOut})
 .addIndicators({name: "kasaup"}) 
 .addTo(controller);
@@ -433,7 +433,7 @@ var scene = new ScrollMagic.Scene()
 .setPin("#suomi-holder")
 .addTo(controller);	
 
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
 .offset(5000)
 .setTween("#suomi-holder", 0.2, {autoAlpha:1, scale:1})
 .addIndicators({name: "suomi"}) 
@@ -441,7 +441,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 /* SUOMI ROTATE*/
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(5200)
+.offset(5300)
 .setTween("#suomi-holder", 0.2, {rotationX:85, scale:1.5})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
@@ -452,7 +452,7 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
-.offset(5450)
+.offset(5600)
 .setTween("#mokki-holder", 0.2, {scale:1, ease: Elastic.easeOut.config(1, 0.3)})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
@@ -473,11 +473,10 @@ var scene = new ScrollMagic.Scene()
 var staggerTween = TweenMax.staggerTo(".suomi-icon-holder", 1, {autoAlpha:1, scale:1, ease: Elastic.easeOut.config(1, 0.3)}, 1);
 /* SUOMI ICON TWEEN SCROLL*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 450})
-.offset(5250)
+.offset(5850)
 .setTween(staggerTween)
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
-
 
 
 
@@ -487,7 +486,7 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(6400)
+.offset(6600)
 .setTween("#ymparisto-cover", 0.2, {x:"-50%", y:"-50%"})
 .addIndicators({name: "joku"}) 
 .addTo(controller);
@@ -499,14 +498,14 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(6600)
+.offset(6800)
 .setTween("#runko-holder", 0.2, {autoAlpha:1, scale:1})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
 
 /* YMPÄRISTÖ COVER CHANGE*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1000})
-.offset(6800)
+.offset(7000)
 .setTween("#ymparisto-cover", 0.2, {backgroundColor: "#B3D1EF"})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
@@ -547,7 +546,7 @@ var scene = new ScrollMagic.Scene()
 /* LEHTI ANIMATION*/
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 800})
-.offset(7050)
+.offset(7250)
 .setTween(".lehti-holder", 1, {autoAlpha:1, scale:2, ease: SlowMo.ease.config(0.3, 0.7, false)})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
@@ -589,12 +588,10 @@ var scene = new ScrollMagic.Scene()
 var appleTween = TweenMax.staggerTo(".apple-holder", 1, {autoAlpha:1, scale:1, ease: Elastic.easeOut.config(1, 0.3)}, 1);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 800})
-.offset(8000)
+.offset(8200)
 .setTween(appleTween)
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
-
-
 
 });
 
