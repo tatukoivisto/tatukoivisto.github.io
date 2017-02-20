@@ -437,6 +437,16 @@
     width: 30%;
     opacity: 0;
 }
+
+#mokki-holder {
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    top: 48%;
+    left: 52%;
+    z-index: 6;
+    width: 15%;
+
+}
 #suomi-cover {
 	transform: translate(-150%,-50%);
 	top: 50% !important;
@@ -475,7 +485,7 @@
 	left: 50% !important;
 	height: 100%;
 	width: 100%;
-	z-index: 5;
+	z-index: 7;
     background-color: #597095;
 }
 
@@ -484,11 +494,90 @@
     transform: translate(-50%,-50%) scale(0.1);
     top: 50%;
     left: 45%;
-    z-index: 5;
+    z-index: 7;
     width: 30%;
     opacity: 0;
 }
 
+.lehti-holder {
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 9;
+    width: 7%;
+    opacity: 1;
+}
+#lehti-1 {
+	top: 34%; 
+    left: 39%;
+}
+#lehti-2 {
+	top: 32%; 
+    left: 48%;
+}
+#lehti-3 {
+	top: 38%; 
+    left: 58%;
+}
+#lehti-4 {
+	top: 40%; 
+    left: 45%;
+}
+#lehti-5 {
+	top: 44%; 
+    left: 33%;
+}
+#lehti-6 {
+	top: 47%; 
+    left: 56%;
+}
+#lehti-7 {
+	top: 50%; 
+    left: 40%;
+}
+#lehti-8 {
+	top: 49%; 
+    left: 48%;
+}
+
+.apple-holder {
+	position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 10;
+    width: 2%;
+    opacity: 1;
+}
+#apple-1 {
+	top: 34%; 
+    left: 39%;
+}
+#apple-2 {
+	top: 32%; 
+    left: 48%;
+}
+#apple-3 {
+	top: 38%; 
+    left: 58%;
+}
+#apple-4 {
+	top: 40%; 
+    left: 45%;
+}
+#apple-5 {
+	top: 44%; 
+    left: 33%;
+}
+#apple-6 {
+	top: 47%; 
+    left: 56%;
+}
+#apple-7 {
+	top: 50%; 
+    left: 40%;
+}
+#apple-8 {
+	top: 49%; 
+    left: 48%;
+}
 
 
 

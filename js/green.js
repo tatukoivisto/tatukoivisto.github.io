@@ -205,9 +205,9 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
-TweenMax.staggerTo("svg", 2, {y: "+=5", yoyo:true, repeat:-1, delay: "0.2"}, 0.4)
+/*TweenMax.staggerTo("svg", 2, {y: "+=5", yoyo:true, repeat:-1, delay: "0.2"}, 0.4)
 
-/* WATER AREA DISAPEAR */
+ WATER AREA DISAPEAR */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(2000)
 .setTween("path, .left-rock-holder, .right-rock-holder, .moving-water, #first-text-holder, #turve-creation-holder", {y: "-=200",autoAlpha:0})
@@ -433,11 +433,31 @@ var scene = new ScrollMagic.Scene()
 .setPin("#suomi-holder")
 .addTo(controller);	
 
-var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(5000)
 .setTween("#suomi-holder", 0.2, {autoAlpha:1, scale:1})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
+/* SUOMI ROTATE*/
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(5200)
+.setTween("#suomi-holder", 0.2, {rotationX:85, scale:1.5})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
+/* MOKKI APPEARANCE*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#mokki-holder")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(5450)
+.setTween("#mokki-holder", 0.2, {scale:1, ease: Elastic.easeOut.config(1, 0.3)})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
+
 
 /* SUOMI ICON APPEARANCE*/
 var scene = new ScrollMagic.Scene()				
@@ -458,13 +478,16 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 4
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
 
+
+
+
 /* YMPARISTO COVER */
 var scene = new ScrollMagic.Scene()				
 .setPin("#ymparisto-cover")
 .addTo(controller);	
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(5800)
+.offset(6400)
 .setTween("#ymparisto-cover", 0.2, {x:"-50%", y:"-50%"})
 .addIndicators({name: "joku"}) 
 .addTo(controller);
@@ -476,21 +499,100 @@ var scene = new ScrollMagic.Scene()
 .addTo(controller);	
 
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
-.offset(6000)
+.offset(6600)
 .setTween("#runko-holder", 0.2, {autoAlpha:1, scale:1})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
 
 /* YMPÄRISTÖ COVER CHANGE*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1000})
-.offset(6200)
+.offset(6800)
 .setTween("#ymparisto-cover", 0.2, {backgroundColor: "#B3D1EF"})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
 
+/* LEHTI PINS*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-1")
+.addTo(controller);	
 
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-2")
+.addTo(controller);	
 
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-3")
+.addTo(controller);	
 
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-4")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-5")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-6")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-7")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#lehti-8")
+.addTo(controller);	
+
+/* LEHTI ANIMATION*/
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 800})
+.offset(7050)
+.setTween(".lehti-holder", 1, {autoAlpha:1, scale:2, ease: SlowMo.ease.config(0.3, 0.7, false)})
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
+
+/* APPLE PIN */
+/* LEHTI PINS*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-1")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-2")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-3")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-4")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-5")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-6")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-7")
+.addTo(controller);	
+
+var scene = new ScrollMagic.Scene()				
+.setPin("#apple-8")
+.addTo(controller);	
+/* APPLE TWEEN*/
+var appleTween = TweenMax.staggerTo(".apple-holder", 1, {autoAlpha:1, scale:1, ease: Elastic.easeOut.config(1, 0.3)}, 1);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 800})
+.offset(8000)
+.setTween(appleTween)
+.addIndicators({name: "suomi"}) 
+.addTo(controller);
 
 
 
