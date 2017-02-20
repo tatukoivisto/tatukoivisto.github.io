@@ -31,7 +31,7 @@
 }
 
 .scrollmagic-pin-spacer {
-	
+	overflow: hidden;
 }
 
 
@@ -411,7 +411,7 @@
 
 .kasa-holder {
 	position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 2;
@@ -422,7 +422,7 @@
 #kasa-text-holder {
 	transform: translate(-50%,-50%);
     z-index: 3;
-    top: 42%;
+    top: 20%;
     left: 50%;
     text-align: center;
     opacity: 0;
@@ -492,6 +492,15 @@
 	width: 85%;
 }
 
+#suomi-text-holder {
+	transform: translate(-50%,-50%);
+    z-index: 10;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+}
+
 #suomi-holder {
 	position: absolute;
     transform: translate(-50%,-50%) scale(0.1);
@@ -524,7 +533,7 @@
 .suomi-icon-holder{
 	position: absolute;
     transform: translate(-50%,-50%) scale(0.1);
-    left: 20%;
+    top: 70%;
     z-index: 5;
     width: 8%;
     opacity: 0;	
@@ -532,15 +541,15 @@
 }
 
 #suomi-icon-1 {
-	top: 30%;
+	left: 30%;
 }
 
 #suomi-icon-2 {
-	top: 50%;
+	left: 50%;
 }
 
 #suomi-icon-3 {
-	top: 70%;
+	left: 70%;
 }
 
 #ymparisto-cover {

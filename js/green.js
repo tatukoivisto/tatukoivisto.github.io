@@ -45,26 +45,6 @@ var controller = new ScrollMagic.Controller({
 });
 
 
-/* SLIDES 
-var slides = document.querySelectorAll("section.panel");
-for (var i=0; i<2; i++) {
-new ScrollMagic.Scene({
-triggerElement: slides[i]
-})
-.setPin(slides[i])
-.addIndicators() // add indicators (requires plugin)
-.addTo(controller);
-}
-
-
-
-var cartoonPn = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 450})
-.setPin("#cartoon-cover")
-.offset(100)
-.addIndicators() // add indicators (requires plugin)
-.addTo(controller);
-*/
-
 
 /* TYPED TEXTS PINNED */
 var scene = new ScrollMagic.Scene()				
@@ -92,6 +72,22 @@ $("#small-typed").typed({
 	showCursor: false,
 	startDelay: 3500
 });
+
+/* CARTOON COVER */
+var scene = new ScrollMagic.Scene()				
+.setPin("#cartoon-cover")
+.addTo(controller);	
+/* CARTOON COVER DISAPEAR */
+var scene = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 1000})
+.offset(400)
+.setTween("#cartoon-cover", 0.5, {y:"-=1000"})
+.addIndicators({name: "magic"}) 
+.addTo(controller);
+var scene = new ScrollMagic.Scene({triggerElement: "#cartoon-cover", duration: 1})
+.offset(1400)
+.setTween("#cartoon-cover", 0.5, {autoAlpha:"0"})
+.addIndicators({name: "magic"}) 
+.addTo(controller);
 
 
 /* FIRST TEXT-HOLDER PINNED */
@@ -222,6 +218,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .addIndicators({name: "stroke"}) 
 .addTo(controller);
 
+
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(2000)
 .setTween(".water-ground", {y: "-=200"})
@@ -254,7 +251,7 @@ var scene = new ScrollMagic.Scene()
 /* KASA APPEARANCE */
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
 .offset(2350)
-.setTween(".kasa-holder", 0.5, {autoAlpha:1,width:"80%"})
+.setTween(".kasa-holder", 0.5, {autoAlpha:1,width:"50%"})
 .addIndicators({name: "kasa"}) 
 .addTo(controller);
 
@@ -446,8 +443,19 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .setTween("#suomi-holder", 0.2, {autoAlpha:1, scale:1})
 .addIndicators({name: "suomi"}) 
 .addTo(controller);
-/* SUOMI ROTATE*/
 
+/* SUOMI TEXT HOLDER*/
+var scene = new ScrollMagic.Scene()				
+.setPin("#suomi-text-holder")
+.addTo(controller);	
+/* SUOMI TEXT APPEARANCE */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(5100)
+.setTween("#suomi-text-holder", 0.2, {y: "=-80", autoAlpha:1})
+.addIndicators({name: "kasa"}) 
+.addTo(controller);
+
+/* SUOMI ROTATE*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
 .offset(5300)
 .setTween("#suomi-holder", 0.2, {rotationX:85, scale:1.5})
