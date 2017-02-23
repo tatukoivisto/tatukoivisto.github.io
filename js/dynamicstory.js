@@ -1,12 +1,10 @@
-$.ajax({
-  dataType: "json",
-  url: https://koivist9.firebaseio.com/.json,
-  data: data,
-  success: success
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("https://koivist9.firebaseio.com/.json", function(result){
+            console.log(result);
+        });
+    });
 });
 
-
-/*var database = firebase.database();
-var databaseRef = firebase.database().ref('content/');
-var testi = firebase.database().ref("https://koivist9.firebaseio.com/");
-*/
