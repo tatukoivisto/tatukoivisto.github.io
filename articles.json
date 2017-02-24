@@ -1,15 +1,9 @@
 { 
 	"slide1": {
-		"title":"ENSIMMÄINEN", 
-		"date":1, 
 		"content":"ENSIMMÄINEN TEKSTI"
 	},"slide2": {
-		"title":"TOINEN", 
-		"date":2, 
 		"content":"TOINEN TEKSTI"
 	},"slide3": {
-		"title":"ENSIMMÄINEN", 
-		"date":3, 
 		"content":"KOLMAS TEKSTI"
 	}
 }
