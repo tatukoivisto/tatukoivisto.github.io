@@ -7,20 +7,24 @@ function compareNumbers(first, second) {
 	return (first == second);
 }
 
+console.log("eka " + numberToGuess);
+
 document.getElementById("button").addEventListener("click", guessTheNumber);
 function guessTheNumber() {
 
+	var number = parseInt(document.getElementById("number").value);
 
-	var number = document.getElementById("number").value;
-	if (!Number.isInteger(number) && number <= 1 && number >= 10){
+
+	if (!Number.isInteger(number) || (number < 1 ) || (number > 10)){
 		alert("luku ei kelpaa");
+	} else {
+		
+		if(compareNumbers(numberToGuess, number)){
+			window.alert("arvasit numeron oikein");
+		}else{
+			window.alert("arvasit numeron väärin");
+		}
+		numberToGuess = getRandomInteger(1, 10);
 	}
-
-	if(compareNumbers(numberToGuess, number)){
-		window.alert("arvasit numeron oikein");
-	}else{
-		window.alert("arvasit numeron väärin");
-	}
-
-	numberToGuess = getRandomInteger(1, 10);
 }
+
