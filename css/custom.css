@@ -13,8 +13,12 @@
 	text-transform: uppercase;
 	margin: 0;
 
-
 }
+
+
+
+
+
 .small-text {
 	font-family: 'Anton', sans-serif;
 	font-size: 2.5vw;
@@ -510,6 +514,7 @@
     opacity: 0;
 }
 
+
 #mokki-holder {
 	position: absolute;
     transform: translate(-50%,-50%) scale(0);
@@ -658,5 +663,42 @@
 }
 #apple-8 {
 	top: 49%;
-    left: 48%;
+  left: 48%;
+}
+
+#final-text-holder{
+  top: 70%;
+  z-index: 10;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#final1{
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+#final2{
+  display: inline-block;
+  vertical-align: top;
+    margin: 15px;
+    transform: scale(0.1);
+    opacity: 0;
+}
+#final3{
+  display: inline-block;
+  vertical-align: top;
+    margin: 15px;
+    transform: scale(0.1);
+    opacity: 0;
+}
+#final4{
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  transform: scale(0.1);
+  opacity: 0;
 }

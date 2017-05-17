@@ -553,6 +553,29 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .addTo(controller);
 
 
+/* RUNKO APPEARANCE*/
+var scene = new ScrollMagic.Scene()
+.setPin("#final-text-holder")
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(6800)
+.setTween("#final-text-holder", 0.2, {autoAlpha:1, scale:1})
+//.addIndicators({name: "suomi"})
+.addTo(controller);
+
+
+var myStaggerTween = TweenMax.staggerFromTo(["#final1", "#final2", "#final3", "#final4"], 1, {autoAlpha:0, scale:0}, {autoAlpha:1, scale:1}, 3);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1500})
+.setTween(myStaggerTween)
+.offset(7000)
+//.addIndicators({name: "suomi"})
+.addTo(controller);
+
+
+
+
 
 
 /* YMPÄRISTÖ COVER CHANGE*/
