@@ -10,7 +10,7 @@ $(document).ready(function() {
 		showCursor: false,
 		loop: true,
 		backspace: function(curString, curStrPos){
-			if (self.arrayPos == 0){
+			if (self.arrayPos === 0){
 				self.stopNum = 3;
 			}
             //every other time, delete the whole typed string
@@ -37,29 +37,3 @@ function hideCover() {
 	$(".content-div-2").delay(2300).fadeIn();
 	$(".content-div-3").delay(2800).fadeIn();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
