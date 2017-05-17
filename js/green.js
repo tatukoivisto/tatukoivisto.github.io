@@ -456,6 +456,13 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 //.addIndicators({name: "kasa"})
 .addTo(controller);
 
+/* SUOMI TEXT DISAPPEARANCE */
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 200})
+.offset(6400)
+.setTween("#suomi-text-holder", {y:"-=100", autoAlpha:0})
+//.addIndicators({name: "PRODUCTION"})
+.addTo(controller);
+
 /* SUOMI ROTATE*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
 .offset(5300)
@@ -509,6 +516,31 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .addTo(controller);
 
 
+/* AURINKO APPEARANCE*/
+var scene = new ScrollMagic.Scene()
+.setPin("#aurinko-holder")
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 250})
+.offset(6800)
+.setTween("#aurinko-holder", 0.2, {autoAlpha:1, scale:0.5})
+//.addIndicators({name: "suomi"})
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 800})
+.offset(6800)
+.setTween("#aurinko-holder", 0.2, {left:"20%", top:"5%", scale:1})
+//.addIndicators({name: "suomi"})
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 3000})
+.offset(6800)
+.setTween("#aurinko-holder", 8, {rotation:"360", ease:Linear.easeNone, repeat:-1})
+//.addIndicators({name: "suomi"})
+.addTo(controller);
+
+
+
 /* RUNKO APPEARANCE*/
 var scene = new ScrollMagic.Scene()
 .setPin("#runko-holder")
@@ -519,6 +551,9 @@ var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 2
 .setTween("#runko-holder", 0.2, {autoAlpha:1, scale:1})
 //.addIndicators({name: "suomi"})
 .addTo(controller);
+
+
+
 
 /* YMPÄRISTÖ COVER CHANGE*/
 var scene = new ScrollMagic.Scene({triggerElement: ".water-section", duration: 1000})

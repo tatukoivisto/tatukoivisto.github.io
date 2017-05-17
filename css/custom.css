@@ -562,13 +562,23 @@
 }
 
 #runko-holder {
-	position: absolute;
+	  position: absolute;
     transform: translate(-50%,-50%) scale(0.1);
     top: 50%;
     left: 45%;
     z-index: 7;
     width: 30%;
     opacity: 0;
+}
+
+#aurinko-holder{
+  position: absolute;
+  transform: translate(-50%,-50%) scale(0.1);
+  top: 20%;
+  left: 0%;
+  z-index: 7;
+  width: 20%;
+  opacity: 0;
 }
 
 .lehti-holder {

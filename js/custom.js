@@ -17,7 +17,6 @@ $(document).ready(function() {
             else{
             	self.stopNum = 0;
             }
-
         }
     });
 
