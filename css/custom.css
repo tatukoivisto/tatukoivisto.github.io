@@ -12,7 +12,7 @@
 	color: #FFF;
 	text-transform: uppercase;
 	margin: 0;
-	
+
 
 }
 .small-text {
@@ -27,6 +27,7 @@
 	font-family: 'Anton', sans-serif;
 	color: #FFF;
 	font-size: 1.5vw;
+  text-transform: uppercase;
 	margin-left: 10px;
 }
 
@@ -45,11 +46,11 @@
 	background: url('../img/cartoon.png') repeat 0 0;*/
 	background-position: center;
     background-size: cover;
-	
-	}
-	
 
-#full-image-style {	
+	}
+
+
+#full-image-style {
 
 	background-image: url(../img/kansisuo.jpg);
     min-height: 100%;
@@ -68,7 +69,7 @@
     z-index: 1;
     width: 30%;
     text-align: center;
-    
+
 }
 
 .image-style {
@@ -91,7 +92,7 @@
     max-height: 100%;
     width: 9%;
     transform: translate(-50%,-50%);
-    
+
     -webkit-transition: 0.2s;
 	   -moz-transition: 0.2s;
 	    -ms-transition: 0.2s;
@@ -133,7 +134,7 @@
 	display: none;
 }
 
-.typed-holder {	
+.typed-holder {
 	text-align: center;
 	position: absolute;
     transform: translate(-50%,-50%);
@@ -149,7 +150,7 @@
 
 @media screen and (max-width: 900px) {
 	.icon-text-holder {
-	
+
 	}
 }
 
@@ -176,7 +177,7 @@
 }
 
 .panel.green {
-	
+
 }
 
 .blue {
@@ -209,7 +210,7 @@
 }
 /*#mokki-holder-cover:hover {
     transform: translate(-50%,-50%) scale(1.2);
- 
+
 }*/
 
 #savu-holder-cover {
@@ -321,7 +322,7 @@
 	height: 20%;
 	top: 100%;
 	z-index: 1;
-	
+
 }
 
 .left-rock-holder {
@@ -373,7 +374,7 @@
 	background-size: cover;
 	height: 65%;
 	top: 100%;
-	
+
 	-webkit-animation: 60s linear 0s normal none infinite animate;
 	-moz-animation: 60s linear 0s normal none infinite animate;
 	-ms-animation: 60s linear 0s normal none infinite animate;
@@ -381,27 +382,27 @@
 	animation: 60s linear 0s normal none infinite animate;
 }
 
- 
+
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 2880px 0;}
 }
- 
+
 @-moz-keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 2880px 0;}
 }
- 
+
 @-ms-keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 2880px 0;}
 }
- 
+
 @-o-keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 2880px 0;}
 }
- 
+
 @keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 2880px 0;}
@@ -534,7 +535,7 @@
     top: 70%;
     z-index: 5;
     width: 8%;
-    opacity: 0;	
+    opacity: 0;
     margin-top:20px;
 }
 
@@ -578,35 +579,35 @@
     opacity: 1;
 }
 #lehti-1 {
-	top: 34%; 
+	top: 34%;
     left: 39%;
 }
 #lehti-2 {
-	top: 32%; 
+	top: 32%;
     left: 48%;
 }
 #lehti-3 {
-	top: 38%; 
+	top: 38%;
     left: 58%;
 }
 #lehti-4 {
-	top: 40%; 
+	top: 40%;
     left: 45%;
 }
 #lehti-5 {
-	top: 44%; 
+	top: 44%;
     left: 33%;
 }
 #lehti-6 {
-	top: 47%; 
+	top: 47%;
     left: 56%;
 }
 #lehti-7 {
-	top: 50%; 
+	top: 50%;
     left: 40%;
 }
 #lehti-8 {
-	top: 49%; 
+	top: 49%;
     left: 48%;
 }
 
@@ -618,41 +619,34 @@
     opacity: 1;
 }
 #apple-1 {
-	top: 34%; 
+	top: 34%;
     left: 39%;
 }
 #apple-2 {
-	top: 32%; 
+	top: 32%;
     left: 48%;
 }
 #apple-3 {
-	top: 38%; 
+	top: 38%;
     left: 58%;
 }
 #apple-4 {
-	top: 40%; 
+	top: 40%;
     left: 45%;
 }
 #apple-5 {
-	top: 44%; 
+	top: 44%;
     left: 33%;
 }
 #apple-6 {
-	top: 47%; 
+	top: 47%;
     left: 56%;
 }
 #apple-7 {
-	top: 50%; 
+	top: 50%;
     left: 40%;
 }
 #apple-8 {
-	top: 49%; 
+	top: 49%;
     left: 48%;
 }
-
-
-
-
-
-
-
